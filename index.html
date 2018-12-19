@@ -42,8 +42,9 @@
             </div>
             <div class="col-12 col-sm align-self-center">
                 <img src="img/logo.png" Class="img-fluid">
-                <button type="button" class="btn btn-warning btn-sm-block"><a href="#reserveTable" style="text-decoration:none; color:black;">Reserve Table</a></button>
             </div>
+                <div class="col-12 col-sm align-self-center"><button type="button" class="btn btn-warning btn-sm-block" id="reserveNow"><a href="#reserveTable" style="text-decoration:none; color:black;">Reserve Table</a></button>
+                </div>
         </div>
     </div>
 </header>
@@ -99,79 +100,86 @@
     </div>
 
     <!-- Reservation Table -->
-<div class="container">
-    <div class="row row-content justify-content-center">
-        <div class="col-12 col-sm-8 col-xs">
-            <div class="card" id="reserveTable">
-                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-            <div class="card-body">
-            <dl class="row form-group">                    
-            <dt class="col-12 col-md-3">Number of Guests</dt>
-            <dd class="col-6">
-            <!-- Material inline 1 -->
-            <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="materialInline1" name="inlineMaterialRadiosExample">
-            <label class="form-check-label" for="materialInline1">1</label>
-            </div>
+        <div class="container">
+            <div class="row row-content justify-content-center">
+                <div class="col-12 col-sm-8 col-xs">
+                    <div class="card" id="reserveTable">
+                        <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                            <div class="card-body">
 
-            <!-- Material inline 2 -->
-            <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample">
-            <label class="form-check-label" for="materialInline2">2</label>
-            </div>
+                                <!-- Left side -->
+                                <div class="row form-group">                    
+                                    <label for="inlineRadio" class="col-12 col-sm-12 col-md-2">Number of Guests</label>
+                                        <div class="col-md-10">
 
-            <!-- Material inline 3 -->
-            <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
-            <label class="form-check-label" for="materialInline3">3</label>
-            </div>
-            <!-- Material inline 4 -->
-            <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="materialInline4" name="inlineMaterialRadiosExample">
-            <label class="form-check-label" for="materialInline4">4</label>
-            </div>
+                                        <!-- Material inline 1 -->
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="materialInline1" value="1">
+                                                <label class="form-check-label" for="materialInline1">1</label>
+                                        </div>
 
-            <!-- Material inline 5 -->
-            <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="materialInline5" name="inlineMaterialRadiosExample">
-            <label class="form-check-label" for="materialInline5">5</label>
-            </div>
+                                        <!-- Material inline 2 -->
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="materialInline2" value="2">
+                                                <label class="form-check-label" for="materialInline2">2</label>
+                                        </div>
 
-            <!-- Material inline 6 -->
-            <div class="form-check form-check-inline">
-            <input type="radio" class="form-check-input" id="materialInline6" name="inlineMaterialRadiosExample">
-            <label class="form-check-label" for="materialInline6">6</label>
-            </div>
-            </dd>
-            </dl>
-            <dl class="row form-group">
-            <dt class="col-12 col-md-3">Date and Time</dt>
-            <dd class="col-6">
-            <div class="input-group mr-3">
-            <div class="row form-group">
-                <div class="col-12 col-md-5">
-                    <input class="form-control" placeholder="Date">
+                                        <!-- Material inline 3 -->
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="materialInline3" value="3">
+                                                <label class="form-check-label" for="materialInline3">3</label>
+                                        </div>
+
+                                        <!-- Material inline 4 -->
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="materialInline4" value="4">
+                                                <label class="form-check-label" for="materialInline4">4</label>
+                                        </div>
+
+                                        <!-- Material inline 5 -->
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="materialInline5" value="5">
+                                                <label class="form-check-label" for="materialInline5">5</label>
+                                        </div>
+
+                                        <!-- Material inline 6 -->
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" id="materialInline6" value="6">
+                                            <label class="form-check-label" for="materialInline6">6</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Left side -->
+                            <div class="row form-group">
+                                <label class="col-12 col-sm-12 col-md-2">Date and Time</label>
+                                <div class="col-6">
+                                    <div class="input-group mr-3">
+
+                                        <!-- Data inputs -->
+                                        <div class="row form-group">
+                                            <div class="col-12 col-md-5">
+                                                <input class="form-control" placeholder="Date">
+                                            </div>
+                                            <div class="col-12 col-md-5">
+                                                <input class="form-control" placeholder="Time">
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="row form-group">
+                                    <div class="col-12 col-sm-4 ml-1">
+                                        <button type="submit" class="btn btn-primary btn-sm-block">Reserve</button>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>                        
+                    </div>
                 </div>
-                <div class="col-12 col-md-5">
-                    <input class="form-control" placeholder="Time">
-                </div>
-            
             </div>
-            </div>
-            </dd>    
-            </dl>
-            <dl class="row">
-                <div class="col-12 col-sm-4 ml-1">
-                    <button type="submit" class="btn btn-primary btn-sm-block">Reserve</button>
-                </div>
-            </dl>
         </div>
     </div>
-</div>
-        </div>
-    </div>
-</div>
-</div>
 
 <footer class="footer">
 <div class="container">
