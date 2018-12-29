@@ -42,8 +42,8 @@ body{
     z-index:0;
 }
 
-.navbar-inverse {
-     background-color: $background-dark;
+.navbar {
+     background: $background-dark;
 }
 .tab-content {
     border-left: 1px solid $lt-gray;
